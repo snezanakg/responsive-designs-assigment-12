@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Baloo+2&family=Poppins:wght@500&family=Source+Sans+3&display=swap" rel="stylesheet">
+    <title>RESPONSIVE DESIGNS</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-logo">
+            <h2 class="header-logo__desktop">Head.</h2> 
+        </div>
+        <div class="header-nav">
+            <a class="header-nav__item" href="#">Works</a>
+            <a class="header-nav__item" href="#">Services</a>
+            <a class="header-nav__item" href="#">Contacts</a>
+        </div>
+         <div class="header-nav__mobile">   
+            <a class="header-nav__mobile-link" href="#">
+                <i class="fa-solid fa-ellipsis"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <h1 class="main-heading">Patagonia</h1>
+        <div class="container-p">
+            <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</p>
+        </div>
+         <div>   
+            <picture class="img-adaptive">
+                <source class="img-adaptive__l" media="(min-width: 1000px)" srcset="image/02. Desktop (Light).png" type="image/png"> 
+                <source class="img-adaptive__s" media="(min-width: 600px)" srcset="image/02. Mobile (Light).png" type="image/png">
+                <source class="img-adaptive__m" media="(min-width: 800px)" srcset="image/02. Tablet (Light).png" type="image/png">
+                <img class="img-adaptive__default-desktop" src="image/02. Desktop (Light).png" alt="Patagonia">
+            </picture>
+        </div>
+
+    </main>
+
+</body>
+</html>
