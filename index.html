@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Baloo+2&family=Poppins:wght@500&family=Source+Sans+3&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b0af4bcb3.js" crossorigin="anonymous"></script>
     <title>RESPONSIVE DESIGNS</title>
 </head>
 <body>
@@ -24,6 +25,7 @@
             </a>
         </div>
     </header>
+    
     <main>
         <h1 class="main-heading">Patagonia</h1>
         <div class="container-p">
@@ -39,6 +41,14 @@
         </div>
 
     </main>
+    <script>
+    //javaScript to toggle visibility of navigation links
+    const MobileLink = document.querySelector('.header-nav__mobile');
+    const navLinks = document.querySelector('.header-nav__mobile-link');
+    navMobileLink.addEventListener('click', function(){
+        navLinks.classList.toggle('show');
+    });
+</script>
 
 </body>
 </html>
