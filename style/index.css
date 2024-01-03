@@ -105,3 +105,46 @@ hbody {
   display: flex;
   }
 }
+/*added css for responsive navigation*/
+
+.header-nav{
+    display: flex;
+
+}
+.header-nav__mobile {
+  display: none;
+}
+.fa-ellipsis {
+  color: black;
+}
+.header-nav__item {
+    color: rgba(36, 38, 53, 1);
+    padding: 20px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+@media screen and (max-width: 799px) {
+  .header-logo__desktop {
+    font-family: 'Baloo 2', sans-serif;
+}
+  h1 {
+      font-size: 36px;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-nav__mobile {
+  display: flex;
+  }
+    
+}
+
+
+
+
+
+
