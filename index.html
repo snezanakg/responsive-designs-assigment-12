@@ -14,20 +14,17 @@
         <div class="header-logo">
             <h2 class="header-logo__desktop">Head.</h2> 
         </div>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label">
-            <span></span></label>
-
-        <nav class="header-nav">
+        <div class="header-nav">
             <a class="header-nav__item" href="#">Works</a>
             <a class="header-nav__item" href="#">Services</a>
             <a class="header-nav__item" href="#">Contacts</a>
-        </nav>
-         <nav class="header-nav__mobile">   
-            <a class="header-nav__mobile-link" href="#">
+
+        </div>
+        <div class="header-nav__mobile">   
+            <a class="header-nav__mobile-link" href="javascript:void(0);"
+            onclick="myFunction()">
                 <i class="fa-solid fa-ellipsis"></i>
             </a>
-         </nav>
     </header>
     
     <main>
@@ -45,18 +42,7 @@
         </div>
 
     </main>
-    <script>
-   //get the menu toggle element
-    const menuToggle = document.getElementById('nav-toggle');
-    // get the header nav element
-    const headerNav = document.querySelector('.header-nav');
-    //add event llistener to the menu toggle
-    addEventListener('click', function(){
-        // toggle the display of the header nav
-        headerNav.classList.toggle('active');
-     });
-       
-</script>
+    
 
 </body>
 </html>
